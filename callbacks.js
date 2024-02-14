@@ -21,11 +21,11 @@ const newArray = likeFilter(array,(number => !(number%2)));
 console.log(newArray);
 
 
-const newReduce = (arrayStored,initial,accumulateFunction) =>{
+const newReduce = (arrayStored,sum,accumulateFunction) =>{
         for(const number of arrayStored){
-            initial = accumulateFunction(initial,number)
+            sum = accumulateFunction(sum,number)
         }
-        return initial;
+        return sum;
 }
 const customReduce = newReduce(array,0,(accumulator,currValue) => accumulator+=currValue)
 console.log(customReduce);
