@@ -1,4 +1,4 @@
-let centre = 3,arrayPrevious=centre-1,arrayNext = centre+1,arrayFirst=0,arrayLast=6;
+let centre = 3,arrayPrevious=centre-1,arrayNext = centre+1,arrayFirst=1,arrayLast=5;
 const print  = (arrayPrevious,arrayNext) =>
  {
     array=[' ',' ',' ',' ',' ',' ',' '];
@@ -18,10 +18,8 @@ for(let outerIndex=3;outerIndex>0;outerIndex--){
    
     
     print(arrayFirst++,arrayLast--);
-    if(outerIndex===1)
-    console.log('   *   ');
-
+    
 }
 
-// print(3)
+
 
